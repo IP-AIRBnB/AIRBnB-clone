@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #FF5A5F;
+            padding: 10px;
+            color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            background-color: #f8f8f8;
+            padding: 10px 0;
+        }
+        .categories a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('hero-image.jpg'); /* Replace with image */
+            height: 400px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .listings {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .listing {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .listing img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Host</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="categories">
+        <a href="#">Homes</a>
+        <a href="#">Apartments</a>
+        <a href="#">Unique Stays</a>
+        <a href="#">Cabins</a>
+        <a href="#">Beachfront</a>
+    </div>
+
+    <div class="hero">
+        <h1>Find Your Perfect Stay</h1>
+    </div>
+    <main>
+        <div class="grid">
+            <div class="gallery">
+                <a href="#"><img src='outside_view.jpg' alt="Outside view"></a>
+                <a href="#"><img src='bedroom.jpg'alt='Bedroom'></a>
+                <a href="#"><img src='livingroom.jpg' alt='Living room'></a>
+                <div class="but_over_img">
+                    <a href="#"><img src="kitchen.jpg" alt="Kitchen"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left_side" float="left">
+                <div>
+                    <h1> Entire home in Addis Ababa</h1>
+                    <h2>8 guests.5bedrooms.8 beds, 3 baths</h2>
+                </div>
+                <div class="row">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+                <div>
+                    <h2>Self check-in</h2>
+                    <p>Check yourself in with the lockbox</p>
+                </div>
+                <div>
+                    <h2>Beautiful area</h2>
+                    <p>Guests love the scene</p>
+                </div>
+                <hr>
+                <div>
+                    <h2>Free cancellation for 24 hours</h2>
+                    <p>Get a full refund if you change your mind</p>
+                </div>
+                <hr>
+                <p>A place that can acommodate a big family at the heart of the city. It has beautiful scenery inside and outside</p>
+                <hr>
+                <div>
+                    <h1>Where you will sleep</h1>
+                    <div class="gallery">
+                        <img src="bedroom1.jpg">
+                        <img src="bedroom2.jpg">
+                        <img src="bedroom3.jpg">
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </main>
