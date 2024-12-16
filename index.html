@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb Clone</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,7 +40,7 @@
             font-weight: bold;
         }
         .hero {
-            background-image: url('hero-image.jpg'); /* Replace with image */
+            background-image: url('assets/property1.jpg');
             height: 400px;
             background-size: cover;
             display: flex;
@@ -52,6 +51,8 @@
         }
         .hero h1 {
             font-size: 3em;
+            color: #fff; /* Set text color to white */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .listings {
             display: grid;
@@ -64,6 +65,11 @@
             border-radius: 5px;
             overflow: hidden;
             text-align: center;
+        }
+        .listing a {
+            display: block; 
+            text-decoration: none;
+            color: inherit;
         }
         .listing img {
             width: 100%;
@@ -78,55 +84,56 @@
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Host</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Host</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
 
-    <div class="categories">
-        <a href="#">Homes</a>
-        <a href="#">Apartments</a>
-        <a href="#">Unique Stays</a>
-        <a href="#">Cabins</a>
-        <a href="#">Beachfront</a>
-    </div>
+<div class="categories">
+    <a href="#">Homes</a>
+    <a href="#">Apartments</a>
+    <a href="#">Unique Stays</a>
+    <a href="#">Cabins</a>
+    <a href="#">Beachfront</a>
+</div>
 
-    <div class="hero">
-        <h1>Find Your Perfect Stay</h1>
-    </div>
+<div class="hero">
+    <h1>Find Your Perfect Stay</h1>
+</div>
 
-    <main>
-        <section class="listings">
-            <div class="listing">
-                <img src="property1.jpg" alt="Cozy Apartment">
+<main>
+    <section class="listings">
+        <div class="listing">
+            <a href="property1.html">
+                <img src="assets/property1.jpg" alt="Cozy Apartment">
                 <h2>Cozy Apartment</h2>
                 <p>$100 per night</p>
-            </div>
-            <div class="listing">
-                <img src="property2.jpg" alt="Luxury Villa">
-                <h2>Luxury Villa</h2>
-                <p>$250 per night</p>
-            </div>
-            <div class="listing">
-                <img src="property3.jpg" alt="Beach House">
-                <h2>Beach House</h2>
-                <p>$300 per night</p>
-            </div>
-            <div class="listing">
-                <img src="property4.jpg" alt="Mountain Cabin">
-                <h2>Mountain Cabin</h2>
-                <p>$150 per night</p>
-            </div>
-            <!-- More listing can be added -->
-        </section>
-    </main>
+            </a>
+        </div>
+        <div class="listing">
+            <img src="assets/property2.jpg" alt="Luxury Villa">
+            <h2>Luxury Villa</h2>
+            <p>$250 per night</p>
+        </div>
+        <div class="listing">
+            <img src="assets/property3.jpg" alt="Comfy Stay">
+            <h2>Comfy stay</h2>
+            <p>$300 per night</p>
+        </div>
+        <div class="listing">
+            <img src="assets/property4.jpg" alt="Elegant Apartment">
+            <h2>Elegant Apartment</h2>
+            <p>$150 per night</p>
+        </div>
+    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2024 Airbnb Clone. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Airbnb Clone. All rights reserved.</p>
+</footer>
 </body>
 </html>
