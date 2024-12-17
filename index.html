@@ -5,81 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb Clone</title>
     <style>
+        /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation Bar */
         nav {
             background-color: #FF5A5F;
             padding: 10px 20px;
             color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
+
         nav ul {
             list-style-type: none;
+            display: flex;
+            margin: 0;
             padding: 0;
         }
+
         nav ul li {
             margin-right: 20px;
         }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
         .hero {
             position: relative;
             background-image: url('assets/family-image.jpg'); /* Replace with your image path */
-            height: 80vh; /* Adjust the height as needed */
-            background-size: cover; /* Ensures the image covers the section */
-            background-position: center; /* Centers the image within the section */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             text-align: center;
         }
+
         .hero h1 {
             font-size: 3rem;
-            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
-            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            padding: 20px 30px;
             border-radius: 10px;
-            z-index: 2; /* Ensures the text stays above the overlay */
+            z-index: 2;
         }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            z-index: 1;
+        }
+
+        /* Listings Section */
         .listings {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns in full view */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
             gap: 20px;
             padding: 40px;
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .listing {
             border: 1px solid #ddd;
             border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            background-color: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .listing img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
+
+        .listing h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .listing p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .listing:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Styles */
         footer {
             text-align: center;
             padding: 20px;
             background-color: #f1f1f1;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            .listings {
+                padding: 20px;
+
+}
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
+        <a href="#" style="color: white; font-size: 1.5rem; font-weight: bold;">Airbnb Clone</a>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Search</a></li>
             <li><a href="#">Host</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
 
@@ -88,31 +179,79 @@
         <h1>Find Your Perfect Stay</h1>
     </div>
 
+    <!-- Listings Section -->
     <main>
         <section class="listings">
             <div class="listing">
-                <img src="assets/cosy-appartement.jpg" alt="Cosy Appartement">
-                <h2>Cozy Apartment</h2>
-                <p>$100 per night</p>
+                <a href="property1.html" style="text-decoration: none; color: inherit;">
+                    <img src="assets/luxury-vila.jpg" alt="Luxury Villa">
+                    <h2>Luxury Villa</h2>
+                    <p>$500 per night</p>
+                </a>
             </div>
+
             <div class="listing">
-                <img src="assets/luxury-vila.jpg" alt="Luxury Villa">
-                <h2>Luxury Villa</h2>
-                <p>$250 per night</p>
+                <img src="./assets/mountain-house.jpg" alt="Mountain Cabin">
+                <h2>Mountain Cabin</h2>
+                <p>$200 per night</p>
             </div>
+
             <div class="listing">
-                <img src="assets/beach-house.jpg" alt="Beach House">
+                <img src="./assets/beach-house.jpg" alt="Beach House">
                 <h2>Beach House</h2>
                 <p>$300 per night</p>
             </div>
+
             <div class="listing">
-                <img src="assets/mountain-house.jpg" alt="Mountain Cabin">
-                <h2>Mountain Cabin</h2>
+                <img src="./assets/cosy-appartement.jpg" alt="City Apartment">
+                <h2>City Apartment</h2>
                 <p>$150 per night</p>
+            </div>
+
+            <div class="listing">
+                <img src="./assets/country-coutage.jpg" alt="Country Cottage">
+                <h2>Country Cottage</h2>
+                <p>$120 per night</p>
+            </div>
+            <div class="listing">
+                <img src="./assets/treehouse.jpg" alt="Treehouse">
+                <h2>Treehouse</h2>
+                <p>$180 per night</p>
+            </div>
+            <div class="listing">
+                <img src="./assets/lakefront-cabin.jpg" alt="Lakefront Cabin">
+                <h2>Lakefront Cabin</h2>
+                <p>$220 per night</p>
+            </div>
+            <div class="listing">
+                <img src="./assets/tinyhouse.jpg" alt="Tiny House">
+                <h2>Tiny House</h2>
+                <p>$80 per night</p>
+            </div>
+            <div class="listing">
+                <img src="./assets/farmhouse.jpg" alt="Farmhouse">
+                <h2>Farmhouse</h2>
+                <p>$140 per night</p>
+            </div>
+            <div class="listing">
+                <img src="./assets/penthouse.jpg" alt="Penthouse">
+                <h2>Penthouse</h2>
+                <p>$600 per night</p>
+            </div>
+            <div class="listing">
+                <img src="./assets/cosy-appartement.jpg" alt="City Apartment">
+                <h2>City Apartment</h2>
+                <p>$150 per night</p>
+            </div>
+            <div class="listing">
+                <img src="./assets/treehouse.jpg" alt="Treehouse">
+                <h2>Treehouse</h2>
+                <p>$180 per night</p>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Airbnb Clone. All rights reserved.</p>
     </footer>
