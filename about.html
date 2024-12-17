@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        nav {
+            background-color: #ff5a5f;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #ff5a5f;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .but_over_img {
+            position: relative;
+        }
+
+        .but_over_img img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .but_over_img button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ff5a5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .but_over_img button:hover {
+            background-color: #e0484e;
+        }
+
+        a {
+            color: #ff5a5f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<nav>Airbnb Clone</nav>
+
+<div class="hero">
+    Your Dream Stay Awaits
+</div>
+
+<div class="container">
+    <h1>About Airbnb Clone</h1>
+
+    <div class="section">
+        <p>Airbnb Clone is a platform connecting travelers with unique and unforgettable accommodations around the world. We strive to make finding the perfect place to stay simple, safe, and enjoyable.</p>
+        <p>Our mission is to empower people to experience the world in a more authentic and meaningful way.</p>
+    </div>
+
+    <div class="section">
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Trust and Safety:</strong> We prioritize the security and well-being of our hosts and guests.</li>
+            <li><strong>Community:</strong> We foster a sense of belonging and connection among our users.</li>
+            <li><strong>Innovation:</strong> We constantly seek new ways to improve the Airbnb Clone experience.</li>
+            <li><strong>Accessibility:</strong> We aim to make our platform available to everyone, regardless of their background or location.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, please don't hesitate to <a href="#">contact us</a>.</p>
+    </div>
+</div>
+</body>
+</html>
