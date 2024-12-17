@@ -21,8 +21,8 @@ This is a simple Airbnb clone created using only **HTML**, **CSS**, and **Vanill
 ```
 |-- index.html         # Main entry point (Homepage)
 |-- property.html      # Property listing page
-|-- styles/            # Folder for CSS files
-|   |-- main.css       # Main stylesheet
+|-- css/            # Folder for CSS files
+|   |-- index.css       # Main stylesheet
 |-- scripts/           # Folder for JavaScript files
 |   |-- app.js         # Main JavaScript file
 |-- assets/            # Folder for images and other static files
@@ -49,10 +49,10 @@ This is a simple Airbnb clone created using only **HTML**, **CSS**, and **Vanill
 ## Screenshots
 
 ### Homepage
-![Homepage Screenshot](assets/images/homepage-screenshot.png)
+![Homepage Screenshot](./assets/homepage-screenshot.png)
 
 ### Property Listing
-![Property Listing Screenshot](assets/images/property-listing-screenshot.png)
+![Property Listing Screenshot](./assets/property-listing-screenshot.png)
 
 ## Future Enhancements
 
