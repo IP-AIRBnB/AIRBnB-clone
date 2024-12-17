@@ -1,0 +1,169 @@
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.country-phone {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.country-code {
+    width: 140px;
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.phone-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.privacy-text {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.continue-btn:hover {
+    background-color: #d32f2f;
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.or span {
+    font-size: 16px;
+    color: #777;
+}
+
+.social-login button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.google-btn {
+    color: #4285f4;
+}
+
+.google-btn:hover {
+    background-color: #4285f4;
+    color: white;
+}
+
+.apple-btn {
+    color: #333;
+}
+
+.apple-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.email-btn {
+    color: #666;
+}
+
+.email-btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.facebook-btn {
+    color: #3b5998;
+}
+
+.facebook-btn:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+.extra-options {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.extra-options a {
+    margin: 0 15px;
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.extra-options a:hover {
+    color: #000;
+}
+
+.material-icons {
+    font-size: 20px;
+}

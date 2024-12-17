@@ -1,0 +1,139 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #f8f9fa;
+	color: #333;
+}
+
+nav {
+	background-color: #ff5a5f;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.hero {
+	background: url('hero-image.jpg') no-repeat center center/cover;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.section {
+	background: white;
+	margin: 20px 0;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+	color: #ff5a5f;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li {
+	margin: 10px 0;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 10px;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.but_over_img {
+	position: relative;
+}
+
+.but_over_img img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.but_over_img button {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #ff5a5f;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.but_over_img button:hover {
+	background-color: #e0484e;
+}
+
+a {
+	color: #ff5a5f;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF5A5F;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #e14d50;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF5A5F;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #e14d50;
+}
