@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain House</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="../css/mount.css">
+</head>
+<body>
+    <header>
+        <h1>Mountain Cabin</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../assets/farmhouse.jpg" style="width:100%" alt="Farmhouse">
+            </div>
+          
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../assets/bedroom2.jpg" style="width:100%" alt="Bedroom">
+            </div>
+          
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../assets/mountain-house.jpg" style="width:100%" alt="Mountain House">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                
+                <video src="../assets/mount-cabin-livingroom.mp4"
+                type="video/mp4" class="vid" controls alt="Living Room">
+         </video>
+            </div>
+
+            <!-- Add more slides as needed -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>        <h2>$100 per night</h2>
+        <p>Welcome to our beautiful mountain house perched among the old growth forest on our peaceful two-acre property. This cedar shake mountain house was built with the help of friends during the World War 2 as a refugee for Nazis. The space boasts big picture windows and a bright interior.</p>
+
+        <h3>Highlights:</h3>
+        <ul>
+            <li>🌟 4 spacious bedrooms</li>
+            <li>🛁 6 modern bathrooms</li>
+            <li>🏊 Scenery view</li>
+            <li>📶 High-speed Fiber Wi-Fi</li>
+        </ul>
+
+        <p>Don't miss out on this history driven vacation home for a cheap price</p>
+
+        <a href="index.html" class="back-link">Back to Home</a>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <!-- Add more dots as needed -->
+        </div>
+    </main>
+    <script src="../script/mount.js">
+    </script>
+</body>
+</html>
