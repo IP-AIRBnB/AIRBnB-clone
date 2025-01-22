@@ -3,66 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain House</title>
-    <!-- Linking the external CSS file -->
-    <link rel="stylesheet" href="../css/mount.css">
+    <title>Mountain Cabin</title>
+    <link rel="stylesheet" href="../css/luxury-villa.css">
 </head>
 <body>
     <header>
         <h1>Mountain Cabin</h1>
     </header>
     <main>
-        <div class="container">
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="../assets/farmhouse.jpg" style="width:100%" alt="Farmhouse">
-            </div>
-          
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="../assets/bedroom2.jpg" style="width:100%" alt="Bedroom">
-            </div>
-          
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="../assets/mountain-house.jpg" style="width:100%" alt="Mountain House">
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                
-                <video src="../assets/mount-cabin-livingroom.mp4"
-                type="video/mp4" class="vid" controls alt="Living Room">
-         </video>
-            </div>
-
-            <!-- Add more slides as needed -->
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>        <h2>$100 per night</h2>
-        <p>Welcome to our beautiful mountain house perched among the old growth forest on our peaceful two-acre property. This cedar shake mountain house was built with the help of friends during the World War 2 as a refugee for Nazis. The space boasts big picture windows and a bright interior.</p>
+        <video controls poster="../assets/mountain-house.jpg" style="width: 100%;">
+            <source src="../assets/country-cabin.mpr.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>$200 per night</h2>
+        <p>
+            Nestled in the heart of the mountains, this cozy cabin is the perfect retreat for adventurers and nature enthusiasts. Surrounded by breathtaking views and pristine wilderness, this property offers both serenity and excitement.
+        </p>
+        <p>
+            The cabin features a rustic charm with modern amenities, including a fully equipped kitchen, a warm and inviting living room with a stone fireplace, and spacious bedrooms for a comfortable stay. Step outside to enjoy the fresh mountain air, take in the views from the deck, or gather around the outdoor fire pit for a memorable evening under the stars.
+        </p>
 
         <h3>Highlights:</h3>
         <ul>
-            <li>🌟 4 spacious bedrooms</li>
-            <li>🛁 6 modern bathrooms</li>
-            <li>🏊 Scenery view</li>
-            <li>📶 High-speed Fiber Wi-Fi</li>
+            <li>⛰️ Stunning mountain views</li>
+            <li>🔥 Stone fireplace for cozy nights</li>
+            <li>🍳 Fully equipped kitchen for home-cooked meals</li>
+            <li>🌌 Deck with seating for stargazing</li>
+            <li>🚶 Proximity to hiking and nature trails</li>
         </ul>
 
-        <p>Don't miss out on this history driven vacation home for a cheap price</p>
+        <p>
+            Whether you're planning a romantic getaway, a family vacation, or an adventure-filled trip with friends, this mountain cabin is the ideal base for exploring the great outdoors. Reserve your stay today and immerse yourself in the beauty of the mountains!
+        </p>
 
         <a href="index.html" class="back-link">Back to Home</a>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <!-- Add more dots as needed -->
-        </div>
     </main>
-    <script src="../script/mount.js">
-    </script>
 </body>
 </html>
