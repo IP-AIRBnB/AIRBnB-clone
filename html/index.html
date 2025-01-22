@@ -15,6 +15,19 @@
             transform: scale(0.9);
             pointer-events: none;
         }
+
+        .highlight {
+            animation: highlight 1s ease-in-out;
+        }
+
+        @keyframes highlight {
+            from {
+                background-color: yellow;
+            }
+            to {
+                background-color: transparent;
+            }
+        }
     </style>
 </head>
 <body>
@@ -38,6 +51,7 @@
         <h1>Find Your Perfect Stay</h1>
     </div>
 
+    <!-- Listings Section -->
     <main>
         <section class="listings">
             <div class="listing">
@@ -122,6 +136,7 @@
         </section>
     </main>
 
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Airbnb Clone. All rights reserved.</p>
@@ -138,15 +153,28 @@
 
         searchBar.addEventListener('input', () => {
             const filterText = searchBar.value.toLowerCase();
+            let firstMatch = null;
 
             listings.forEach(listing => {
                 const title = listing.querySelector('h2').textContent.toLowerCase();
                 if (title.includes(filterText)) {
                     listing.classList.remove('hidden');
+                    if (!firstMatch) firstMatch = listing; // Store the first match
                 } else {
                     listing.classList.add('hidden');
                 }
             });
+
+            if (firstMatch) {
+                // Scroll to the first match
+                firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Highlight the listing
+                firstMatch.classList.add('highlight');
+                setTimeout(() => {
+                    firstMatch.classList.remove('highlight');
+                }, 1000);
+            }
         });
     </script>
 </body>
