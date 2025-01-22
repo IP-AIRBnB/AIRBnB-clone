@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb Clone</title>
     <link rel="stylesheet" href="../css/index.css">
+    <style>
+        .listings .listing {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .listings .listing.hidden {
+            opacity: 0;
+            transform: scale(0.9);
+            pointer-events: none;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -14,6 +25,12 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="about.html">About Us</a></li>
         </ul>
+        <!-- Search Bar -->
+        <input
+            type="text"
+            id="search-bar"
+            placeholder="Search properties..."
+            style="margin-left: 20px; padding: 5px; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px;">
     </nav>
 
     <!-- Hero Section -->
@@ -21,7 +38,6 @@
         <h1>Find Your Perfect Stay</h1>
     </div>
 
-    <!-- Listings Section -->
     <main>
         <section class="listings">
             <div class="listing">
@@ -114,5 +130,24 @@
             <p>Email: <a href="mailto:your-email@example.com">AirBnBemail@gmail.com</a></p>
         </div>
     </footer>
+
+    <!-- JavaScript for Search -->
+    <script>
+        const searchBar = document.getElementById('search-bar');
+        const listings = document.querySelectorAll('.listings .listing');
+
+        searchBar.addEventListener('input', () => {
+            const filterText = searchBar.value.toLowerCase();
+
+            listings.forEach(listing => {
+                const title = listing.querySelector('h2').textContent.toLowerCase();
+                if (title.includes(filterText)) {
+                    listing.classList.remove('hidden');
+                } else {
+                    listing.classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
