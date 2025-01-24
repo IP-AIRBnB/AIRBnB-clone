@@ -1,4 +1,26 @@
-# Airbnb Clone
+# Title: Airbnb Clone
+## Group: 6
+
+### Group Members:
+
+| Name          | Id          |
+|---------------|-------------|
+|Kaleb Mesfin   |0742/15      |
+|Kidus Efrem    |0773/15      |
+|Kidus Yosef    |0775/15      |
+|Leul Teferi    |0817/15      |
+|Natnael Solomon|1062/15      |
+|Nebiyu Samuel  |1076/15      |
+
+---
+
+
+
+
+
+
+
+
 
 This is a simple Airbnb clone created using only **HTML**, **CSS**, and **Vanilla JavaScript**. The project aims to replicate the core visual and functional elements of the Airbnb website, providing users with a clean and responsive interface.
 
